@@ -28,3 +28,8 @@ jobs:
       with:
         # Location file open vpn
         FILE_OVPN: "myconfig.ovpn"
+      env:
+          CA_CRT: ${{ secrets.CA_CRT}}
+          USER_CRT: ${{ secrets.USER_CRT }}
+          USER_KEY: ${{ secrets.USER_KEY }}
+          TLS_KEY: ${{ secrets.TLS_KEY }}
